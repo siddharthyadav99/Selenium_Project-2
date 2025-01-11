@@ -56,7 +56,7 @@ ljob_location = []
 ljob_type = []
 ljob_description = []
 
-# Iterate through the first 3 pages
+# Iterate through the first 4 pages
 for j in range(1, 5):
     # Navigate to the desired page
     try:
