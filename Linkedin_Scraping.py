@@ -52,7 +52,7 @@ time.sleep(3)
 
 # Collect job data
 ljob_title = []
-lname_location = []
+ljob_location = []
 ljob_type = []
 ljob_description = []
 
@@ -85,13 +85,13 @@ for j in range(1, 5):
             
             # Extract job details
             job_title = driver.find_element(By.XPATH, "//h1[@class='t-24 t-bold inline']").text
-            name_location = driver.find_element(By.XPATH, "//div[@class='t-black--light mt2']/span").text
+            job_location = driver.find_element(By.XPATH, "//div[@class='t-black--light mt2']/span").text
             job_type = driver.find_element(By.XPATH, "//div[@class='job-details-preferences-and-skills__pill']/span").text
             job_description = driver.find_element(By.XPATH, "//div[@class='mt4']/p").text
 
             # Append data to respective lists
             ljob_title.append(job_title)
-            lname_location.append(name_location)
+            ljob_location.append(job_location)
             ljob_type.append(job_type)
             ljob_description.append(job_description)
         
@@ -102,7 +102,7 @@ for j in range(1, 5):
 # Create a DataFrame from the collected data
 data = {
     'job_title': ljob_title,
-    'name_location': lname_location,
+    'job_location': ljob_location,
     'job_type': ljob_type,
     'job_description': ljob_description
 }
