@@ -7,7 +7,6 @@ This project is a comprehensive **Web Scraping Script** built using **Python** a
 - **Automated Job Search**: Navigate through job search results and pages dynamically, simulating user actions to retrieve relevant data.
 - **Data Extraction**: Scrapes key job details, including:
   - **Job Title**: The title or designation of the job position.
-  - **Company Name**: The organization offering the job.
   - **Job Location**: Where the job is based, including city or region.
   - **Job Type**: Either WFH, WFO or Hybrid.
   - **Job Description**: A summary of the role's responsibilities and requirements.
