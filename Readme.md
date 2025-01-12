@@ -8,8 +8,8 @@ This project is a comprehensive **web scraping application** built using **Pytho
 - **Data Extraction**: Scrapes key job details, including:
   - **Job Title**: The title or designation of the job position.
   - **Company Name**: The organization offering the job.
-  - **Location**: Where the job is based, including city or region.
-  - **Salary**: The salary range or details (if provided).
+  - **Job Location**: Where the job is based, including city or region.
+  - **Job Type**: Either WFH, WFO or Hybrid.
   - **Job Description**: A summary of the role's responsibilities and requirements.
 - **Pagination Handling**: Automatically iterates through multiple pages of search results to collect comprehensive data.
 - **CSV Export**: Saves the scraped data into a structured CSV file for easy analysis and storage.
@@ -48,7 +48,9 @@ This project is a comprehensive **web scraping application** built using **Pytho
    git clone https://github.com/your-username/your-repository.git
 
 2. Install dependencies:
-   ```pip install selenium pandas```
+   ```bash
+   pip install selenium pandas
+   ```
 
 3. Download ChromeDriver and update the script with the path to the driver executable.
 
@@ -56,5 +58,7 @@ This project is a comprehensive **web scraping application** built using **Pytho
 1. Update the script with your LinkedIn login credentials.
 2. Specify the job title and location you want to search for in the script.
 3. Run the script:
+   ```bash
    python linkedin_scraper.py
-4. The results will be saved as a CSV file in the same directory as the script.
+   ```
+5. The results will be saved as a CSV file in the same directory as the script.
